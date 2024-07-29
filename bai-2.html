@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="bai-2.css" />
+  </head>
+  <body>
+    <div class="pokedex">
+      <div class="left-panel">
+        <img id="pokemonImage" src="" alt="Pokemon Image" />
+      </div>
+      <div class="right-panel">
+        <input
+          type="text"
+          id="pokemonName"
+          class="search-box"
+          placeholder="Search Pokemon Name"
+        />
+        <button onclick="fetchPokemon()">Tìm kiếm</button>
+        <div class="info">
+          <div><strong>Name:</strong> <span id="name">--</span></div>
+          <div><strong>Type:</strong> <span id="type">--</span></div>
+          <div><strong>Height:</strong> <span id="height">--</span></div>
+          <div><strong>Weight:</strong> <span id="weight">--</span></div>
+          <div><strong>Bio:</strong> <span id="bio">--</span></div>
+        </div>
+      </div>
+    </div>
+    <script src="bai-2.js"></script>
+  </body>
+</html>
